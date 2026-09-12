@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Lotus – Bestellung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+<header class="topbar">
+  <a class="brand" href="#"><img src="assets/neon-lotus-logo.jpg" alt="Neon Lotus"><span>NEON LOTUS</span></a>
+  <div class="header-pill"><span class="dot"></span> ONLINE BESTELLEN</div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">NEON LOTUS · LOS SANTOS</div>
+    <h1>Dein Abend.<br><span>Deine Bestellung.</span></h1>
+    <p>Speisen und Getränke bequem vorbestellen – zur Abholung oder direkt an deine gewünschte Postleitzahl liefern lassen.</p>
+    <a class="hero-button" href="#menu">Jetzt bestellen <b>↓</b></a>
+  </div>
+  <div class="hero-logo"><img src="assets/neon-lotus-logo.jpg" alt=""></div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="section-head"><div><span class="eyebrow">UNSER MENÜ</span><h2>Essen</h2></div><span class="section-note">Frisch für dich zubereitet</span></div>
+  <div class="grid" id="food-grid"></div>
+
+  <div class="section-head drinks-head"><div><span class="eyebrow">UNSER MENÜ</span><h2>Getränke</h2></div><span class="section-note">Kalt & direkt serviert</span></div>
+  <div class="grid" id="drink-grid"></div>
+</section>
+
+<section class="checkout">
+  <div class="checkout-title"><span class="eyebrow">DEINE BESTELLUNG</span><h2>Warenkorb</h2></div>
+  <div class="checkout-layout">
+    <div class="cart-card">
+      <div id="cart-empty" class="empty">Noch nichts ausgewählt.<small>Füge oben Produkte zu deiner Bestellung hinzu.</small></div>
+      <div id="cart-lines"></div>
+      <div class="total-row"><span>Gesamt</span><strong id="total">$0</strong></div>
+    </div>
+
+    <div class="order-card">
+      <h3>Wie möchtest du bestellen?</h3>
+      <div class="method-switch">
+        <button class="method active" data-method="pickup">Abholung</button>
+        <button class="method" data-method="delivery">Lieferung</button>
+      </div>
+      <label>Name / Ansprechpartner<input id="customer" placeholder="z. B. Danny Blaze"></label>
+      <div id="postal-wrap" class="hidden"><label>Liefer-PLZ<input id="postal" inputmode="numeric" placeholder="z. B. 7093"></label></div>
+      <label>Anmerkung <span>optional</span><textarea id="note" placeholder="Zusätzliche Hinweise zur Bestellung …"></textarea></label>
+      <button id="submit" class="submit">Bestellung aufgeben <span>→</span></button>
+      <p class="fineprint">Die Bestellung wird nach dem Absenden an das Neon-Lotus-Team übermittelt.</p>
+      <div id="message" class="message"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><img src="assets/neon-lotus-logo.jpg" alt=""><span>NEON LOTUS</span><small>Online Ordering · Preview</small></footer>
+<script src="app.js"></script>
+</body>
+</html>
