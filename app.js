@@ -1,8 +1,8 @@
 
 const products=[
- {id:'cookie',name:'Lotusblütenkeks',desc:'Knuspriger Lotusblütenkeks',price:3000,img:'assets/lotusblueten-keks.png',cat:'food'},
- {id:'miso',name:'Lotus Miso Suppe',desc:'Warme Miso Suppe',price:5000,img:'assets/lotus-miso-suppe.png',cat:'food'},
- {id:'lemonade',name:'White Lotus Limonade',desc:'Erfrischende Limonade',price:4000,img:'assets/white-lotus-limonade.png',cat:'drink'},
+ {id:'cookie',name:'Lotusblütenkeks',desc:'Knuspriger Lotusblütenkeks',price:2000,img:'assets/lotusblueten-keks.png',cat:'food'},
+ {id:'miso',name:'Lotus Miso Suppe',desc:'Warme Miso Suppe',price:4000,img:'assets/lotus-miso-suppe.png',cat:'food'},
+ {id:'lemonade',name:'White Lotus Limonade',desc:'Erfrischende Limonade',price:2500,img:'assets/white-lotus-limonade.png',cat:'drink'},
  {id:'beer',name:'Bier',desc:'Kaltes Bier',price:1000,img:'assets/bier.png',cat:'drink'},
  {id:'wine',name:'Wein',desc:'Ausgewählter Wein',price:1500,img:'assets/wein.png',cat:'drink'},
  {id:'vodka',name:'Vodka E',desc:'Neon Lotus Vodka E',price:2000,img:'assets/vodka-e.png',cat:'drink'},
