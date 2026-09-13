@@ -28,7 +28,10 @@
 </section>
 
 <section id="menu" class="menu">
-  <div class="section-head"><div><span class="eyebrow">UNSER MENÜ</span><h2>Essen</h2></div><span class="section-note">Frisch für dich zubereitet</span></div>
+  <div class="section-head catering-head"><div><span class="eyebrow">CATERING</span><h2>Cateringpakete</h2></div><span class="section-note">Pakete werden pro Person berechnet</span></div>
+  <div class="grid catering-grid" id="catering-grid"></div>
+
+  <div class="section-head food-head"><div><span class="eyebrow">UNSER MENÜ</span><h2>Essen</h2></div><span class="section-note">Frisch für dich zubereitet</span></div>
   <div class="grid" id="food-grid"></div>
 
   <div class="section-head drinks-head"><div><span class="eyebrow">UNSER MENÜ</span><h2>Getränke</h2></div><span class="section-note">Kalt & direkt serviert</span></div>
@@ -50,7 +53,7 @@
         <button class="method active" data-method="pickup">Abholung</button>
         <button class="method" data-method="delivery">Lieferung</button>
       </div>
-      <label>Name / Ansprechpartner<input id="customer" placeholder="z. B. Hans Wurst"></label>
+      <label>Name / Ansprechpartner<input id="customer" placeholder="z. B. Danny Blaze"></label>
       <div id="postal-wrap" class="hidden"><label>Liefer-PLZ<input id="postal" inputmode="numeric" placeholder="z. B. 7093"></label></div>
       <label>Anmerkung <span>optional</span><textarea id="note" placeholder="Zusätzliche Hinweise zur Bestellung …"></textarea></label>
       <button id="submit" class="submit">Bestellung aufgeben <span>→</span></button>

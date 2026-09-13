@@ -1,5 +1,8 @@
 
 const products=[
+ {id:'catering-pure',name:'Lotus Pure',desc:'White Lotus Limonade · Lotus Miso Suppe · Lotusblütenkeks',price:8000,unit:'Person',cat:'catering'},
+ {id:'catering-night',name:'Lotus Night',desc:'Bier · Wein · Vodka E · Tequila Shot',price:6000,unit:'Person',cat:'catering'},
+ {id:'catering-deluxe',name:'Lotus Deluxe',desc:'Unser gesamtes Sortiment',price:14000,unit:'Person',cat:'catering'},
  {id:'cookie',name:'Lotusblütenkeks',desc:'Knuspriger Lotusblütenkeks',price:2000,img:'assets/lotusblueten-keks.png',cat:'food'},
  {id:'miso',name:'Lotus Miso Suppe',desc:'Warme Miso Suppe',price:4000,img:'assets/lotus-miso-suppe.png',cat:'food'},
  {id:'lemonade',name:'White Lotus Limonade',desc:'Erfrischende Limonade',price:2500,img:'assets/white-lotus-limonade.png',cat:'drink'},
@@ -10,14 +13,15 @@ const products=[
 ];
 const cart=Object.fromEntries(products.map(p=>[p.id,0]));
 const money=n=>'$'+n.toLocaleString('de-DE');
-function card(p){return `<article class="card"><div class="product-img"><img src="${p.img}" alt="${p.name}"></div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="bottom"><div class="price">${money(p.price)}</div><div class="qty"><button onclick="change('${p.id}',-1)">−</button><span id="q-${p.id}">0</span><button onclick="change('${p.id}',1)">+</button></div></div></div></article>`}
+function card(p){const media=p.cat==='catering'?`<div class="catering-mark">CATERING</div>`:`<div class="product-img"><img src="${p.img}" alt="${p.name}"></div>`;const unit=p.unit?`<span class="unit"> / ${p.unit}</span>`:'';return `<article class="card ${p.cat==='catering'?'catering-card':''}">${media}<div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="bottom"><div class="price">${money(p.price)}${unit}</div><div class="qty"><button onclick="change('${p.id}',-1)">−</button><span id="q-${p.id}">0</span><button onclick="change('${p.id}',1)">+</button></div></div></div></article>`}
+document.querySelector('#catering-grid').innerHTML=products.filter(p=>p.cat==='catering').map(card).join('');
 document.querySelector('#food-grid').innerHTML=products.filter(p=>p.cat==='food').map(card).join('');
 document.querySelector('#drink-grid').innerHTML=products.filter(p=>p.cat==='drink').map(card).join('');
 function change(id,d){cart[id]=Math.max(0,Math.min(99,cart[id]+d));document.querySelector('#q-'+id).textContent=cart[id];renderCart()}
 function renderCart(){
  const chosen=products.filter(p=>cart[p.id]>0), lines=document.querySelector('#cart-lines'), empty=document.querySelector('#cart-empty');
  empty.style.display=chosen.length?'none':'flex';
- lines.innerHTML=chosen.map(p=>`<div class="cart-line"><b>${cart[p.id]}× ${p.name}</b><span>${money(p.price)} / Stk.</span><strong>${money(p.price*cart[p.id])}</strong></div>`).join('');
+ lines.innerHTML=chosen.map(p=>`<div class="cart-line"><b>${cart[p.id]}× ${p.name}</b><span>${money(p.price)} / ${p.unit||'Stk.'}</span><strong>${money(p.price*cart[p.id])}</strong></div>`).join('');
  document.querySelector('#total').textContent=money(chosen.reduce((s,p)=>s+p.price*cart[p.id],0));
 }
 let method='pickup';
