@@ -48,6 +48,15 @@
     </div>
 
     <div class="order-card">
+      <div class="discord-auth-box">
+        <div id="discord-auth-status" class="discord-auth-status">
+          <div><b>Discord-Verifizierung erforderlich</b><small>Du musst Mitglied unseres Discord-Servers sein.</small></div>
+        </div>
+        <div class="discord-auth-actions">
+          <button id="discord-login" type="button" class="discord-login">Mit Discord verifizieren</button>
+          <button id="discord-logout" type="button" class="discord-logout hidden">Abmelden</button>
+        </div>
+      </div>
       <h3>Wie möchtest du bestellen?</h3>
       <div class="method-switch">
         <button class="method active" data-method="pickup">Abholung</button>
@@ -56,7 +65,7 @@
       <label>Name / Ansprechpartner<input id="customer" placeholder="z. B. Danny Blaze"></label>
       <div id="postal-wrap" class="hidden"><label>Liefer-PLZ<input id="postal" inputmode="numeric" placeholder="z. B. 7093"></label></div>
       <label>Anmerkung <span>optional</span><textarea id="note" placeholder="Zusätzliche Hinweise zur Bestellung …"></textarea></label>
-      <button id="submit" class="submit">Bestellung aufgeben <span>→</span></button>
+      <button id="submit" class="submit locked" disabled>Bestellung aufgeben <span>→</span></button>
       <p class="fineprint">Die Bestellung wird nach dem Absenden an das Neon-Lotus-Team übermittelt.</p>
       <div id="message" class="message"></div>
     </div>

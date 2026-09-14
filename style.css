@@ -9,3 +9,18 @@ main{max-width:1440px;margin:auto}.hero{min-height:590px;padding:70px clamp(24px
 footer{border-top:1px solid #211b21;min-height:110px;display:flex;align-items:center;gap:13px;padding:0 clamp(24px,6vw,96px);max-width:1440px;margin:auto;color:#d8cdd5;font-weight:900;letter-spacing:.13em}footer img{width:54px;height:38px;object-fit:cover;mix-blend-mode:screen}footer small{margin-left:auto;color:#655c63;font-weight:500;letter-spacing:0}
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-logo{order:-1;max-width:580px}.grid{grid-template-columns:1fr 1fr}.checkout-layout{grid-template-columns:1fr}.header-pill{display:none}}
 @media(max-width:560px){.topbar{height:72px}.brand img{width:48px}.hero{padding-top:35px}.hero h1{font-size:47px}.grid{grid-template-columns:1fr}.product-img{height:190px}.section-note{display:none}.menu,.checkout{padding-left:18px;padding-right:18px}.hero{padding-left:18px;padding-right:18px}.cart-line{grid-template-columns:1fr auto}.cart-line span{display:none}footer{padding:0 18px}}
+
+/* Discord verification */
+.discord-auth-box{border:1px solid rgba(255,113,135,.25);background:rgba(255,113,135,.055);border-radius:14px;padding:16px;margin-bottom:22px}
+.discord-auth-status{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:#f3edf1}
+.discord-auth-status b{display:block;font-size:14px}
+.discord-auth-status small{display:block;color:#958991;margin-top:4px;font-size:12px}
+.discord-auth-status.verified small{color:#b8aeb4}
+.verified-dot{width:10px;height:10px;border-radius:50%;background:#72d99c;box-shadow:0 0 12px rgba(114,217,156,.65);flex:0 0 auto}
+.discord-auth-actions{display:flex;gap:10px}
+.discord-login,.discord-logout{border:0;border-radius:10px;padding:11px 15px;font-weight:800;cursor:pointer;font-family:inherit}
+.discord-login{background:#5865f2;color:white;flex:1}
+.discord-login:hover{filter:brightness(1.08)}
+.discord-logout{background:#211b20;color:#c8bcc3;border:1px solid #3a3037}
+.submit.locked{cursor:not-allowed;filter:saturate(.45);opacity:.55!important}
+.hidden{display:none!important}
