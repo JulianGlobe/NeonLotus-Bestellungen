@@ -10,17 +10,62 @@ footer{border-top:1px solid #211b21;min-height:110px;display:flex;align-items:ce
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-logo{order:-1;max-width:580px}.grid{grid-template-columns:1fr 1fr}.checkout-layout{grid-template-columns:1fr}.header-pill{display:none}}
 @media(max-width:560px){.topbar{height:72px}.brand img{width:48px}.hero{padding-top:35px}.hero h1{font-size:47px}.grid{grid-template-columns:1fr}.product-img{height:190px}.section-note{display:none}.menu,.checkout{padding-left:18px;padding-right:18px}.hero{padding-left:18px;padding-right:18px}.cart-line{grid-template-columns:1fr auto}.cart-line span{display:none}footer{padding:0 18px}}
 
+
 /* Discord verification */
-.discord-auth-box{border:1px solid rgba(255,113,135,.25);background:rgba(255,113,135,.055);border-radius:14px;padding:16px;margin-bottom:22px}
-.discord-auth-status{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:#f3edf1}
-.discord-auth-status b{display:block;font-size:14px}
-.discord-auth-status small{display:block;color:#958991;margin-top:4px;font-size:12px}
-.discord-auth-status.verified small{color:#b8aeb4}
-.verified-dot{width:10px;height:10px;border-radius:50%;background:#72d99c;box-shadow:0 0 12px rgba(114,217,156,.65);flex:0 0 auto}
-.discord-auth-actions{display:flex;gap:10px}
-.discord-login,.discord-logout{border:0;border-radius:10px;padding:11px 15px;font-weight:800;cursor:pointer;font-family:inherit}
-.discord-login{background:#5865f2;color:white;flex:1}
-.discord-login:hover{filter:brightness(1.08)}
-.discord-logout{background:#211b20;color:#c8bcc3;border:1px solid #3a3037}
+.discord-auth-box{
+  display:grid;
+  grid-template-columns:52px 1fr;
+  gap:15px;
+  align-items:start;
+  border:1px solid rgba(88,101,242,.34);
+  background:
+    radial-gradient(circle at 0 0,rgba(88,101,242,.16),transparent 44%),
+    linear-gradient(145deg,rgba(24,21,31,.98),rgba(15,13,19,.98));
+  border-radius:16px;
+  padding:17px;
+  margin-bottom:24px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
+}
+.discord-auth-icon{
+  width:52px;height:52px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,#6571f5,#4b57d8);
+  color:white;box-shadow:0 10px 26px rgba(88,101,242,.2);
+}
+.discord-auth-icon svg{width:29px;height:29px}
+.discord-auth-content{min-width:0}
+.discord-auth-status{display:flex;align-items:center;gap:10px;color:#f5f0f4;margin:1px 0 12px}
+.discord-auth-status b{display:block;font-size:15px;line-height:1.25}
+.discord-auth-status small{display:block;color:#9f949d;margin-top:5px;font-size:12px;line-height:1.45}
+.discord-auth-status.verified small{color:#c4bac1}
+.verified-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:#72d99c;box-shadow:0 0 12px rgba(114,217,156,.65);flex:0 0 auto
+}
+.discord-auth-actions{display:flex;gap:9px;align-items:center}
+.discord-login,.discord-logout{
+  min-height:42px;border-radius:10px;padding:11px 14px;
+  font-weight:800;font-family:inherit;text-decoration:none;
+  display:inline-flex;align-items:center;justify-content:center;gap:14px;
+  transition:.18s ease;cursor:pointer
+}
+.discord-login{
+  flex:1;border:1px solid rgba(255,255,255,.07);
+  background:linear-gradient(135deg,#6571f5,#4f5bdc);color:white;
+  box-shadow:0 8px 24px rgba(88,101,242,.16)
+}
+.discord-login:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.discord-arrow{margin-left:auto;font-size:16px;line-height:1}
+.discord-logout{border:1px solid #40363e;background:#211c22;color:#cec3ca}
+.discord-logout:hover{border-color:#65535e;background:#292229}
+.discord-auth-hint{margin-top:10px;color:#716871;font-size:10.5px;line-height:1.4}
 .submit.locked{cursor:not-allowed;filter:saturate(.45);opacity:.55!important}
 .hidden{display:none!important}
+
+@media(max-width:560px){
+  .discord-auth-box{grid-template-columns:44px 1fr;padding:14px;gap:12px}
+  .discord-auth-icon{width:44px;height:44px;border-radius:12px}
+  .discord-auth-icon svg{width:25px;height:25px}
+  .discord-auth-actions{flex-direction:column;align-items:stretch}
+  .discord-login,.discord-logout{width:100%}
+}

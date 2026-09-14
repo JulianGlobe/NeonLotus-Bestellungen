@@ -57,7 +57,11 @@ async function refreshAuth(){
  }catch{localStorage.removeItem(AUTH_KEY);setAuthUI(null)}
 }
 
-document.querySelector('#discord-login').onclick=()=>{window.location.href=`${API}/auth/discord`};
+const discordLogin=document.querySelector('#discord-login');
+if(discordLogin){
+  discordLogin.setAttribute('href',`${API}/auth/discord`);
+}
+
 document.querySelector('#discord-logout').onclick=()=>{localStorage.removeItem(AUTH_KEY);setAuthUI(null)};
 
 (function handleDiscordReturn(){
