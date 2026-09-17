@@ -1,5 +1,0 @@
-FIX 2
-- Rolle 1096413447039766550 wird bei Sakura-Kündigung explizit entfernt.
-- Gespräch abschließen unterstützt jetzt eine konkrete Gesprächs-ID.
-- Das Panel verwendet für die Gesprächsauswahl einen eigenen Select-Handler (vpt) und führt anschließend /termin abgeschlossen mit der gewählten ID aus.
-- /termin abgeschlossen hat optional ebenfalls die ID, falls mehrere Gespräche offen sind.

@@ -1,7 +1,0 @@
-Aktuelle Funkwerte:
-Sakura Performance: 569323
-Neon Lotus: 6969
-Blacklist: 18747
-
-Da reale Funkwerte auch 4 bzw. 5 Stellen haben, akzeptiert /funk jetzt 4 bis 9 Ziffern.
-Die drei Werte werden als Startwerte in der Funkübersicht angezeigt, bis sie per /funk geändert werden.

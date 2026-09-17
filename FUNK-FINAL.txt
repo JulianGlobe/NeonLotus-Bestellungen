@@ -1,6 +1,0 @@
-FINALVERSION
-
-Bei Funkänderungen wird in der Ankündigung gepingt:
-Sakura Mitarbeiter — 1096402401382109244
-
-Die getestete Discord-Technik-Testrolle wurde entfernt.

@@ -1,4 +1,0 @@
-Dashboard-Fehler sanctionDeadlineMs behoben.
-Sanktions-Embed näher am bisherigen Sakura-Bot.
-Nach dem Embed wird der Betroffene separat gepingt.
-5-Tage-Frist und automatische Sanktionsrollen bleiben bestehen.
