@@ -11,6 +11,7 @@ import { upsertAdminPanels, handleAdminPanelInteraction } from './utils/adminPan
 import { ensureNeonSakuraJoinRoles, ensureNeonLotusMemberRole, syncAllNeonLotusMemberRoles, syncSakuraMirrorRoles, syncBlacklistSakuraMirrorRoles } from './utils/neonSync.js';
 import { processApprenticeExamReminders } from './utils/apprenticeReminder.js';
 import { processWeeklyDuesThursdayReminder } from './utils/weeklyDuesReminder.js';
+import { processSanctionPaymentReminders } from './utils/sanctionReminder.js';
 
 const requiredEnv=['DISCORD_TOKEN','CLIENT_ID','GUILD_ID'];
 const missingEnv=requiredEnv.filter(key=>!process.env[key]);
@@ -64,6 +65,8 @@ client.once(Events.ClientReady,async readyClient=>{
  setInterval(async()=>{try{const sent=await processApprenticeExamReminders(client,config);if(sent)console.log(`✅ ${sent} Lehrling(e) zur Tunerprüfung erinnert.`);}catch(e){console.error('❌ Tunerprüfungs-Erinnerung:',e);}},15*60*1000);
  try{const sent=await processWeeklyDuesThursdayReminder(client,config);if(sent)console.log(`✅ ${sent} Wochenabgaben-Reminder gesendet.`);}catch(e){console.error('❌ Wochenabgaben-Reminder:',e);}
  setInterval(async()=>{try{const sent=await processWeeklyDuesThursdayReminder(client,config);if(sent)console.log(`✅ ${sent} Wochenabgaben-Reminder gesendet.`);}catch(e){console.error('❌ Wochenabgaben-Reminder:',e);}},5*60*1000);
+ try{const sent=await processSanctionPaymentReminders(client,config);if(sent)console.log(`✅ ${sent} Sanktions-Reminder gesendet.`);}catch(e){console.error('❌ Sanktions-Reminder:',e);}
+ setInterval(async()=>{try{const sent=await processSanctionPaymentReminders(client,config);if(sent)console.log(`✅ ${sent} Sanktions-Reminder gesendet.`);}catch(e){console.error('❌ Sanktions-Reminder:',e);}},5*60*1000);
 });
 
 client.on(Events.GuildMemberAdd,async member=>{
