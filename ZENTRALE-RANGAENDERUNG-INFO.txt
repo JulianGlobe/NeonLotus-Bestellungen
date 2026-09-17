@@ -1,0 +1,20 @@
+UPDATE
+
+1. BEFÖRDERUNG / DEGRADIERUNG
+- Keine Auswahl Sakura / Neon Lotus mehr.
+- Person auswählen -> gewünschten Ziel-Rang direkt aus der gemeinsamen Framework-Liste auswählen -> Grund.
+- Die sichtbare Framework-Rangrolle auf dem Hauptdiscord wird entsprechend ersetzt.
+- Bei einem NL.-Zielrang wird der passende Rang auf dem Neon-Lotus-Discord mit synchronisiert.
+
+2. SAKURA-SPIEGELROLLEN AUF NEON LOTUS
+Für aktive Sakura-Mitarbeiter werden die Hauptdiscord-Bereichsrollen äquivalent gespiegelt:
+- Mitarbeiter-Bereich -> Sakura Mitarbeiter
+- Führungsebene -> Sakura Führungsebene
+- Leitungsebene -> Sakura Leitungsebene
+- Wenn keine dieser drei Bereichsrollen erkannt wird -> Sakura Aushilfe
+- Sakura Personal bleibt als Trenner/Basis bestehen.
+
+Die Synchronisierung erfolgt bei zentraler Einstellung, zentraler Rangänderung und beim Join
+auf den Neon-Lotus-Discord.
+
+Blacklist bleibt noch nicht implementiert.

@@ -1,0 +1,541 @@
+{
+  "roles": {
+    "staatsbuerger": "1405248393353363507",
+    "staatsbuerger_trenner": "1405516273940693082",
+    "zusatzrollen_trenner": "1405249663396872264",
+    "taenzer": "1404149112735137843",
+    "barkeeper": "1404148919906209916",
+    "dj": "1404148863895343224",
+    "security": "1404148783410839592",
+    "ehrenrang": "1405533158190874645",
+    "vip": "1405533470347886653",
+    "sakura_personal_trenner": "1549100327196688385",
+    "sakura_mitarbeiter": "1435434553714938006",
+    "sakura_fuehrung": "1435435814732693597",
+    "neon_personal_trenner": "1404114244210917517",
+    "bestellungen": "1549103028949229688",
+    "ratatouille": "1472725338785054782",
+    "neon_lotus_mitarbeiter": "1549099453774827541",
+    "verwaltung_trenner": "1549107259748126841",
+    "partymanagement": "1404138296086495323",
+    "personalmanagement": "1477432343286251540",
+    "leitung_trenner": "1404077411850649645",
+    "stv_neon_lotus_leitung": "1404134322801213647",
+    "neon_lotus_leitung": "1404138186900504587",
+    "sakura_leitung_trenner": "1549100986185023562",
+    "sakura_leitung": "1438470611570790452",
+    "sakura_aushilfe": "1549103028949229688",
+    "neon_nachwuchs": "1549099453774827541",
+    "neon_clubkraft": "1549794035508453456",
+    "neon_profi": "1549794154219970680",
+    "neon_manager": "1404138296086495323",
+    "neon_leitung": "1404138186900504587",
+    "blacklist_nachwuchs": "1341884168443007046",
+    "blacklist_profi": "1341884168443007051",
+    "blacklist_manager": "1341884168430293104",
+    "blacklist_leitung": "1341884168443007052",
+    "blacklist_sakura_mitarbeiter": "1408026579166171227",
+    "blacklist_sakura_fuehrung": "1549830275171753994",
+    "blacklist_sakura_leitung": "1408508760812421130",
+    "blacklist_staatsbuerger": "1353039021047152640"
+  },
+  "areas": {
+    "neon": {
+      "name": "Neon Lotus",
+      "ranks": [
+        {
+          "key": "neon_nachwuchs",
+          "name": "Nachwuchs",
+          "level": 1,
+          "separator": "neon_personal_trenner",
+          "mainRole": "nl_nachwuchs"
+        },
+        {
+          "key": "neon_clubkraft",
+          "name": "Clubkraft",
+          "level": 2,
+          "separator": "neon_personal_trenner",
+          "mainRole": "nl_clubkraft"
+        },
+        {
+          "key": "neon_profi",
+          "name": "Profi",
+          "level": 3,
+          "separator": "neon_personal_trenner",
+          "mainRole": "nl_profi"
+        },
+        {
+          "key": "neon_manager",
+          "name": "Manager",
+          "level": 4,
+          "separator": "neon_personal_trenner",
+          "mainRole": "nl_manager"
+        },
+        {
+          "key": "neon_leitung",
+          "name": "Leitung",
+          "level": 5,
+          "separator": "neon_personal_trenner",
+          "mainRole": "nl_leitung"
+        }
+      ],
+      "baseRoles": [],
+      "separators": [
+        "neon_personal_trenner"
+      ],
+      "removeOnTermination": [
+        "neon_nachwuchs",
+        "neon_clubkraft",
+        "neon_profi",
+        "neon_manager",
+        "neon_leitung",
+        "neon_personal_trenner"
+      ]
+    },
+    "sakura": {
+      "name": "Sakura",
+      "ranks": [
+        {
+          "key": "sakura_mitarbeiter",
+          "name": "Sakura-Mitarbeiter",
+          "level": 1,
+          "separator": "sakura_personal_trenner"
+        },
+        {
+          "key": "sakura_fuehrung",
+          "name": "Sakura-Führungsebene",
+          "level": 2,
+          "separator": "sakura_personal_trenner"
+        },
+        {
+          "key": "sakura_leitung",
+          "name": "Sakura-Leitungsebene",
+          "level": 3,
+          "separator": "sakura_leitung_trenner"
+        }
+      ],
+      "baseRoles": [],
+      "separators": [
+        "sakura_personal_trenner",
+        "sakura_leitung_trenner"
+      ],
+      "removeOnTermination": [
+        "sakura_mitarbeiter",
+        "sakura_fuehrung",
+        "sakura_leitung",
+        "sakura_personal_trenner",
+        "sakura_leitung_trenner"
+      ]
+    },
+    "blacklist": {
+      "guildId": "1341884168404992000",
+      "ranks": [
+        {
+          "key": "blacklist_nachwuchs",
+          "name": "Nachwuchs",
+          "level": 1,
+          "mainRole": "b_nachwuchs"
+        },
+        {
+          "key": "blacklist_profi",
+          "name": "Profi",
+          "level": 2,
+          "mainRole": "b_profi"
+        },
+        {
+          "key": "blacklist_manager",
+          "name": "Manager",
+          "level": 3,
+          "mainRole": "b_manager"
+        },
+        {
+          "key": "blacklist_leitung",
+          "name": "Leitung",
+          "level": 4,
+          "mainRole": "b_leitung"
+        }
+      ],
+      "name": "Blacklist",
+      "removeOnTermination": [
+        "blacklist_nachwuchs",
+        "blacklist_profi",
+        "blacklist_manager",
+        "blacklist_leitung",
+        "blacklist_sakura_mitarbeiter",
+        "blacklist_sakura_fuehrung",
+        "blacklist_sakura_leitung",
+        "blacklist_staatsbuerger"
+      ]
+    }
+  },
+  "permissions": {
+    "personnelManagers": [
+      "1404138296086495323",
+      "1404138186900504587",
+      "1435435814732693597",
+      "1438470611570790452"
+    ]
+  },
+  "guilds": {
+    "sakura": {
+      "name": "Sakura Performance",
+      "id": "1096402401382109237",
+      "channels": {
+        "einstellung": "1469009045926183146",
+        "rankChanges": "1096402402107727943",
+        "sanctions": "1096402401898008626",
+        "termination": "1096402402107727944",
+        "appointments": "1123129545600548944",
+        "funk": "1416920966004478063",
+        "announcements": "1096402401898008621",
+        "fraktionsfarben": "1329517434599772200",
+        "panels": {
+          "personal": "1549719339308154910",
+          "finance": "1549719626244431872",
+          "sanctions": "1549719717613273188",
+          "admin": "1549719874694160434"
+        },
+        "absences": "1096402402325835818",
+        "cashLog": "1549728331287502949",
+        "weeklyDues": "1549174964911874148",
+        "announcements_leadership": "1096512516823199754",
+        "announcements_management": "1096512544547536936"
+      },
+      "roles": {
+        "staatsbuerger": "1096402401382109239",
+        "sakura_mitarbeiter_base": "1096402401382109244",
+        "rang": "1096413350549794886",
+        "praktikant": "1096402401382109246",
+        "lehrling": "1096402401407279145",
+        "tuner": "1096402401407279146",
+        "geselle": "1096402401407279147",
+        "meister": "1096402401407279148",
+        "ausbilder": "1096402401407279149",
+        "stv_werkstattleitung": "1096402401407279150",
+        "werkstattleitung": "1096402401407279151",
+        "teamleiter": "1371585424086138900",
+        "manager": "1096402401407279152",
+        "stv_inhaber": "1096402401407279154",
+        "boss": "1096402401424060516",
+        "leitung_trenner": "1549170141768450148",
+        "fuehrung_trenner": "1549170497663668255",
+        "mitarbeiter_trenner": "1549170725234016276",
+        "gekuendigt": "1114997406669475850",
+        "abgemeldet": "1461803260519120896",
+        "sanktion_1": "1460596074736648192",
+        "sanktion_2": "1460596151035232328",
+        "sakura_performance": "1097402977670680588",
+        "neon_lotus_leitung": "1436330697735540841",
+        "blacklist_leitung": "1136028969481797743",
+        "fuehrungsebene_2": "1097403678715031612",
+        "leitungsebene_2": "1096402401382109245",
+        "nl_nachwuchs": "1549784380912697424",
+        "nl_clubkraft": "1549784504565243904",
+        "nl_profi": "1549784780940255322",
+        "nl_manager": "1549785450678587433",
+        "nl_leitung": "1549785674935443637",
+        "neon_lotus_global": "1441777254953779282",
+        "blacklist_allgemein": "1360267078321311836",
+        "b_nachwuchs": "1549784290089373827",
+        "b_profi": "1549784721939107932",
+        "b_manager": "1549785322689269790",
+        "b_leitung": "1549785606777868298",
+        "fuehrungsebene": "1097403678715031612",
+        "leitungsebene": "1096402401382109245"
+      }
+    },
+    "neon": {
+      "name": "Neon Lotus",
+      "id": "1404076373911539712"
+    },
+    "blacklist": {
+      "id": "1341884168404992000"
+    }
+  },
+  "sakuraMain": {
+    "ranks": [
+      {
+        "key": "praktikant",
+        "name": "Praktikant",
+        "level": 1,
+        "separator": "mitarbeiter_trenner"
+      },
+      {
+        "key": "lehrling",
+        "name": "Lehrling",
+        "level": 2,
+        "separator": "mitarbeiter_trenner"
+      },
+      {
+        "key": "tuner",
+        "name": "Tuner",
+        "level": 3,
+        "separator": "mitarbeiter_trenner"
+      },
+      {
+        "key": "geselle",
+        "name": "Geselle",
+        "level": 4,
+        "separator": "mitarbeiter_trenner"
+      },
+      {
+        "key": "meister",
+        "name": "Meister",
+        "level": 5,
+        "separator": "mitarbeiter_trenner"
+      },
+      {
+        "key": "ausbilder",
+        "name": "Ausbilder",
+        "level": 6,
+        "separator": "fuehrung_trenner"
+      },
+      {
+        "key": "stv_werkstattleitung",
+        "name": "Stv. Werkstattleiter*in",
+        "level": 7,
+        "separator": "fuehrung_trenner"
+      },
+      {
+        "key": "werkstattleitung",
+        "name": "Werkstattleiter*in",
+        "level": 8,
+        "separator": "fuehrung_trenner"
+      },
+      {
+        "key": "teamleiter",
+        "name": "Teamleiter",
+        "level": 9,
+        "separator": "fuehrung_trenner"
+      },
+      {
+        "key": "manager",
+        "name": "Manager",
+        "level": 10,
+        "separator": "leitung_trenner"
+      },
+      {
+        "key": "stv_inhaber",
+        "name": "Stv. Inhaber",
+        "level": 11,
+        "separator": "leitung_trenner"
+      },
+      {
+        "key": "boss",
+        "name": "Boss",
+        "level": 12,
+        "separator": "leitung_trenner"
+      }
+    ],
+    "baseRoles": [
+      "sakura_mitarbeiter_base",
+      "rang",
+      "sakura_performance"
+    ],
+    "separators": [
+      "mitarbeiter_trenner",
+      "fuehrung_trenner",
+      "leitung_trenner"
+    ],
+    "personnelMinLevel": 6,
+    "secondaryAdditionalRoles": {
+      "mid": "fuehrungsebene_2",
+      "high": "leitungsebene_2"
+    }
+  },
+  "neonMain": {
+    "rankRoleKeys": [
+      "nl_nachwuchs",
+      "nl_clubkraft",
+      "nl_profi",
+      "nl_manager",
+      "nl_leitung"
+    ],
+    "globalRole": "neon_lotus_global",
+    "leadershipRole": null,
+    "legacyRemoveRoles": [
+      "neon_lotus_leitung"
+    ]
+  },
+  "frameworkRanks": [
+    {
+      "key": "praktikant",
+      "name": "Praktikant",
+      "area": "sakura",
+      "areaRankKey": "praktikant",
+      "position": 1
+    },
+    {
+      "key": "lehrling",
+      "name": "Lehrling",
+      "area": "sakura",
+      "areaRankKey": "lehrling",
+      "position": 2
+    },
+    {
+      "key": "tuner",
+      "name": "Tuner",
+      "area": "sakura",
+      "areaRankKey": "tuner",
+      "position": 3
+    },
+    {
+      "key": "b_nachwuchs",
+      "name": "B. Nachwuchs",
+      "area": "blacklist",
+      "areaRankKey": "blacklist_nachwuchs",
+      "position": 4
+    },
+    {
+      "key": "nl_nachwuchs",
+      "name": "NL. Nachwuchs",
+      "area": "neon",
+      "areaRankKey": "neon_nachwuchs",
+      "position": 5
+    },
+    {
+      "key": "geselle",
+      "name": "Geselle",
+      "area": "sakura",
+      "areaRankKey": "geselle",
+      "position": 6
+    },
+    {
+      "key": "nl_clubkraft",
+      "name": "NL. Clubkraft",
+      "area": "neon",
+      "areaRankKey": "neon_clubkraft",
+      "position": 7
+    },
+    {
+      "key": "meister",
+      "name": "Meister",
+      "area": "sakura",
+      "areaRankKey": "meister",
+      "position": 8
+    },
+    {
+      "key": "nl_profi",
+      "name": "NL. Profi",
+      "area": "neon",
+      "areaRankKey": "neon_profi",
+      "position": 9
+    },
+    {
+      "key": "b_profi",
+      "name": "B. Profi",
+      "area": "blacklist",
+      "areaRankKey": "blacklist_profi",
+      "position": 10
+    },
+    {
+      "key": "ausbilder",
+      "name": "Ausbilder",
+      "area": "sakura",
+      "areaRankKey": "ausbilder",
+      "position": 11
+    },
+    {
+      "key": "b_manager",
+      "name": "B. Manager",
+      "area": "blacklist",
+      "areaRankKey": "blacklist_manager",
+      "position": 12
+    },
+    {
+      "key": "nl_manager",
+      "name": "NL. Manager",
+      "area": "neon",
+      "areaRankKey": "neon_manager",
+      "position": 13
+    },
+    {
+      "key": "stv_werkstattleitung",
+      "name": "Stv. Werkstattleiter*in",
+      "area": "sakura",
+      "areaRankKey": "stv_werkstattleitung",
+      "position": 14
+    },
+    {
+      "key": "b_leitung",
+      "name": "B. Leitung",
+      "area": "blacklist",
+      "areaRankKey": "blacklist_leitung",
+      "position": 15
+    },
+    {
+      "key": "nl_leitung",
+      "name": "NL. Leitung",
+      "area": "neon",
+      "areaRankKey": "neon_leitung",
+      "position": 16
+    },
+    {
+      "key": "werkstattleitung",
+      "name": "Werkstattleiter*in",
+      "area": "sakura",
+      "areaRankKey": "werkstattleitung",
+      "position": 17
+    },
+    {
+      "key": "teamleiter",
+      "name": "Teamleiter",
+      "area": "sakura",
+      "areaRankKey": "teamleiter",
+      "position": 18
+    },
+    {
+      "key": "manager",
+      "name": "Manager",
+      "area": "sakura",
+      "areaRankKey": "manager",
+      "position": 19
+    },
+    {
+      "key": "stv_inhaber",
+      "name": "Stv. Inhaber",
+      "area": "sakura",
+      "areaRankKey": "stv_inhaber",
+      "position": 20
+    },
+    {
+      "key": "boss",
+      "name": "Boss",
+      "area": "sakura",
+      "areaRankKey": "boss",
+      "position": 21
+    }
+  ],
+  "frameworkBands": {
+    "employee": {
+      "min": 1,
+      "max": 10,
+      "mainSeparator": "mitarbeiter_trenner",
+      "neonMirror": "sakura_mitarbeiter",
+      "mainHierarchy": null
+    },
+    "leadership": {
+      "min": 11,
+      "max": 18,
+      "mainSeparator": "fuehrung_trenner",
+      "neonMirror": "sakura_fuehrung",
+      "mainHierarchy": "fuehrungsebene"
+    },
+    "management": {
+      "min": 19,
+      "max": 21,
+      "mainSeparator": "leitung_trenner",
+      "neonMirror": "sakura_leitung",
+      "mainHierarchy": "leitungsebene"
+    }
+  },
+  "blacklistMain": {
+    "globalRole": "blacklist_allgemein",
+    "rankRoleKeys": [
+      "b_nachwuchs",
+      "b_profi",
+      "b_manager",
+      "b_leitung"
+    ]
+  }
+}

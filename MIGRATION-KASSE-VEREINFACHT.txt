@@ -1,0 +1,39 @@
+NEON LOTUS – KASSE VEREINFACHT
+
+ENTFERNT:
+- /verkauf
+- /lager rein
+- /lager raus
+- /lager bestand
+- /kasse einzahlen
+- /kasse auszahlen
+- Verkaufsseite im Dashboard
+- Lagerseite im Dashboard
+- Verkaufsbereich aus einzelnen Personalakten
+
+NEU:
+- /kasse aktualisieren betrag:<aktueller Gesamtbetrag>
+- /kasse stand
+
+BEISPIEL:
+  /kasse aktualisieren betrag:1250000
+
+Der angegebene Betrag ist IMMER der komplette aktuelle Stand der Fraktionskasse.
+Es wird keine einzelne Ein- oder Auszahlung mehr gebucht.
+
+DASHBOARD:
+- Zeigt nur noch den aktuellen Gesamtstand der Kasse.
+- Zeigt Datum, Bearbeiter und Änderung zum vorherigen Stand.
+- Behält eine Kassenhistorie zur Nachvollziehbarkeit.
+- Alte Verkaufs- und Lagerdaten werden NICHT gelöscht; sie sind nur nicht mehr Teil der Oberfläche.
+
+REVIDIEREN:
+  /revidieren bereich:Kasse id:<ID>
+  /revidieren bereich:Abmeldung id:<ID>
+
+Bei der Kasse kann nur der aktuellste aktive Stand revidiert werden. Danach wird automatisch
+der vorherige aktive Stand wieder zum aktuellen Kassenstand.
+
+BESTEHENDE KASSE:
+Beim ersten Start nach dem Update wird der alte Saldo aus den bisherigen Ein-/Auszahlungen
+automatisch einmalig als Startwert für das neue Kassenmodell übernommen.

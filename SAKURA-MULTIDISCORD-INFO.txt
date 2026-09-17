@@ -1,0 +1,25 @@
+ERSTER MULTI-DISCORD-STAND
+
+Sakura/Hauptdiscord: 1096402401382109237
+Neon Lotus: bestehende Railway-Variable GUILD_ID
+
+Der gleiche Bot muss auf BEIDEN Discords eingeladen sein.
+
+Enthalten:
+- Slash Commands werden auf beiden Discords registriert.
+- Sakura-Ränge Praktikant bis Boss.
+- Sakura Einstellung im vorgegebenen Channel.
+- Sakura Up-/Downrank im vorgegebenen Channel.
+- Sakura Kündigung im vorgegebenen Channel.
+- Sakura Personalberechtigung ab Ausbilder.
+- Neon Lotus Leitung und Blacklist Leitung werden als Verwaltungsrollen anerkannt.
+- Sakura-Einstellung vergibt Sakura Mitarbeiter, Rang, Sakura Performance, Rangrolle und passenden Trenner.
+- Zentrale Sakura-Kündigung entfernt zusätzlich die Neon-Lotus-Personalrollen auf dem Neon-Lotus-Discord.
+- Beide Bereiche schreiben in dieselbe Datenbank / Personalwebsite.
+
+Bewusst noch NICHT eingebaut:
+- /funk
+- /wochenabgaben
+- automatische Abgemeldet-Rolle
+- automatische 1./2. Sanktionsrolle
+Diese folgen nach dem Grundtest der Zwei-Discord-Verbindung.

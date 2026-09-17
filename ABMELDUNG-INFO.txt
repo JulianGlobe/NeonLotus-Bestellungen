@@ -1,0 +1,6 @@
+Abmeldung-Automatik:
+- Eingabeformat TT.MM.JJJJ wird geprüft.
+- Sakura-Personal ab Praktikant kann /abmeldung nutzen.
+- Rolle Abgemeldet wird im aktiven Zeitraum automatisch vergeben.
+- Nach Ende des Zeitraums wird sie automatisch entfernt.
+- Synchronisierung beim Botstart und alle 15 Minuten.

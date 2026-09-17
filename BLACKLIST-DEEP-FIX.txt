@@ -1,0 +1,18 @@
+BLACKLIST DEEP FIX
+
+Behobene Ursachen:
+1. Im Blacklist-Join-Handler wurde syncBlacklistSakuraMirrorRoles aufgerufen,
+   aber in src/index.js nicht importiert. Das führte beim Blacklist-Join zu einem ReferenceError.
+2. Es lagen zwei unterschiedliche Kündigungs-Commanddateien mit demselben Slash-Commandnamen vor.
+   Je nach Lade-Reihenfolge konnte alter Kündigungs-Code aktiv sein.
+3. Der alte Kündigungs-Code setzte Blacklist employee_ranks nicht zuverlässig inaktiv.
+   Dadurch konnte die Website bei bereits gekündigten Personen weiterhin B. <Rang> anzeigen.
+4. Zentrale Kündigung räumt jetzt Sakura + Neon Lotus + Blacklist auf.
+5. Auf dem Blacklist-Discord werden bei zentraler Kündigung auch B.-Ränge,
+   Sakura-Spiegelrollen und Staatsbürger entfernt.
+6. Die Website zeigt bei employee.active=0 keinen aktuellen Framework-Rang mehr.
+
+Blacklist Rollen:
+Allgemein Hauptdiscord: 1360267078321311836
+Leitung Hauptdiscord: 1136028969481797743
+Staatsbürger Blacklist: 1353039021047152640

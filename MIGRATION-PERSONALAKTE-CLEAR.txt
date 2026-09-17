@@ -1,0 +1,24 @@
+NEU: PERSONALAKTE VOLLSTÄNDIG LÖSCHEN
+
+Befehl:
+  /personalakte clear person:@Person bestaetigung:CLEAR
+
+Der Befehl löscht für die ausgewählte Person:
+- Mitarbeiter-Stammdatensatz
+- Neon-/Sakura-Rangdaten
+- Sanktionen
+- Verkäufe
+- Abmeldungen
+- Personalhistorie
+- Gesprächseinladungen
+
+NICHT betroffen:
+- Discord-Rollen der Person
+- Fraktionskasse
+- Fraktionslager
+- Daten anderer Personen
+
+WICHTIG:
+Die Löschung ist endgültig. Deshalb muss zur Bestätigung exakt CLEAR eingegeben werden.
+
+Keine neuen Railway-Variablen erforderlich.

@@ -1,0 +1,7 @@
+Berechtigung für /personalakte clear:
+- Discord Technik: 1096402401424060517
+- Leitungsebene: 1096402401382109245
+- Administratoren
+
+Der vorherige alte Sakura-Leitungsrollen-Check wurde ersetzt.
+Der sanctionDeadlineMs-Dashboardfix aus dem vorherigen Paket bleibt enthalten.

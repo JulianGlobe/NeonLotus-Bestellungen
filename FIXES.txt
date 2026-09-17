@@ -1,0 +1,12 @@
+PANELS V2 – Fehlerkorrekturen 16.09.2026
+
+Behoben:
+- Kündigung: alle vom Bot verwalteten Sakura-Rang-, Abteilungs-/Trenner-, Basis-, Sanktions- und Abmeldungsrollen werden zuverlässig entfernt; Gekündigt bleibt/kommt hinzu.
+- Abmeldungen aus dem Panel werden in Channel 1096402402325835818 gepostet.
+- Gespräch abschließen: bei mehreren offenen Gesprächen erscheint nach der Personenauswahl eine Auswahl der konkreten Gesprächs-ID/Anlasses; genau dieses Gespräch wird abgeschlossen. Ein vorhandener Thread wird archiviert.
+- Manuelle Kassen-Einzahlungen/-Auszahlungen werden in Channel 1549728331287502949 gepostet.
+- Wochenabgaben (bezahlt/offen/aktualisieren) werden in Channel 1549174964911874148 gepostet.
+- Wochenabgaben aktualisieren: SQL-Parameterfehler in rollWeeklyDues behoben (amount_after wurde beim UPDATE nicht gebunden).
+- Personalakten-Webseite: fehlendes nowMs in der Mitarbeiterdetailansicht behoben.
+- Fraktionsfarben +50.000 $ automatische Kasseneinnahme bleibt enthalten.
+- Thread-Fix für Gesprächseinladungen bleibt enthalten.

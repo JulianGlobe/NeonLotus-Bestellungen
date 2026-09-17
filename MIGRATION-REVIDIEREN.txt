@@ -1,0 +1,25 @@
+NEU: ZENTRALES REVIDIEREN
+
+Befehl:
+  /revidieren bereich:<Verkauf|Kasse|Lager|Abmeldung> id:<ID>
+
+Revidieren löscht den Datensatz nicht. Er bleibt als Historie sichtbar, wird aber aus
+aktuellen Summen/Beständen herausgerechnet.
+
+Beispiele:
+  /revidieren bereich:Verkauf id:12
+  /revidieren bereich:Kasse id:8
+  /revidieren bereich:Lager id:21
+  /revidieren bereich:Abmeldung id:4
+
+Wirkung:
+- Verkauf: revidierter Umsatz zählt nicht mehr zum Verkaufsumsatz.
+- Kasse: revidierte Ein-/Auszahlung zählt nicht mehr zum Kassenstand.
+- Lager: revidierte Ein-/Auslagerung zählt nicht mehr zum Lagerbestand.
+- Abmeldung: bleibt historisch nachvollziehbar, ist aber als revidiert markiert.
+
+Sanktionen bleiben separat:
+  /sanktion revidiert id:<ID>
+
+WICHTIG:
+Jeder Bereich hat seine eigene ID-Reihe. Deshalb wird beim Revidieren immer Bereich + ID angegeben.

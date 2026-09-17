@@ -1,0 +1,10 @@
+NEU IN DIESER VERSION
+
+- /akte wurde vollständig entfernt.
+- Separate, geschützte Personalverwaltung unter /personal.
+- Direkter Zugriff auf dieselbe SQLite-Datenbank wie der Discord-Bot.
+- Personalverwaltung ist read-only, damit im Browser nichts versehentlich verändert werden kann.
+- Neue Railway-Variable erforderlich:
+  DASHBOARD_PASSWORD
+- Optional:
+  DASHBOARD_SECRET

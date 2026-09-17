@@ -1,0 +1,19 @@
+PUBLISH-MODUS
+
+Neue Railway-Variable:
+BOT_PUBLISHED=false
+
+false:
+- Bot kann online bleiben
+- Slash-Commands werden beim Start auf Sakura UND Neon Lotus aus Discord entfernt/ausgeblendet
+- Website /personal bleibt erreichbar
+- Datenbank und Automatik bleiben erhalten
+
+Zum offiziellen Release:
+BOT_PUBLISHED=true
+
+Danach Railway neu deployen/restarten.
+Der Bot registriert dann wieder alle Slash-Commands auf beiden Discords.
+
+WICHTIG:
+Die Discord-Command-Aktualisierung kann clientseitig kurz gecacht sein.

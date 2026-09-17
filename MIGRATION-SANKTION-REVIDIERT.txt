@@ -1,0 +1,15 @@
+NEU: SANKTIONEN REVIDIEREN
+
+Befehl:
+  /sanktion revidiert id:<Sanktions-ID>
+
+Verhalten:
+- Nur offene Sanktionen können revidiert werden.
+- Die Sanktion wird NICHT gelöscht.
+- Status wird auf REVIDIERT gesetzt.
+- Zeitpunkt und ausführende Person werden in der Datenbank gespeichert.
+- Revidierte Sanktionen zählen nicht mehr zu den offenen Sanktionen.
+- Im Dashboard bleiben sie in der Historie sichtbar und werden als „↩️ Revidiert“ markiert.
+
+Keine neuen Railway-Variablen erforderlich.
+Bestehende Daten bleiben erhalten.

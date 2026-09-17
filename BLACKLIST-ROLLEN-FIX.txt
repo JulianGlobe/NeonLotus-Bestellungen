@@ -1,0 +1,20 @@
+BLACKLIST ROLLEN-FIX
+
+Hauptdiscord:
+- Blacklist allgemein: 1360267078321311836
+- Blacklist Leitung: 1136028969481797743
+
+Korrektur:
+Der automatische Blacklist-Zugehörigkeitstag verwendet jetzt ausschließlich
+"Blacklist allgemein". Die Rolle "Blacklist Leitung" wird NICHT mehr automatisch
+an normale Blacklist-Mitglieder vergeben.
+
+Blacklist-Discord:
+- Staatsbürger: 1353039021047152640
+Diese Rolle wird beim Join auf den Blacklist-Discord automatisch vergeben.
+
+B.-Framework-Ränge bleiben unverändert:
+- B. Nachwuchs
+- B. Profi
+- B. Manager
+- B. Leitung

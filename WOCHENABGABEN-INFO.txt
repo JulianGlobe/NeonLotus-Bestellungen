@@ -1,0 +1,15 @@
+WOCHENABGABEN
+Praktikant bis Meister: $100.000
+Ausbilder bis Teamleiter: $50.000
+Manager, Stv. Inhaber, Boss: keine Abgabe
+
+/wochenabgaben bezahlt person
+/wochenabgaben offen
+/wochenabgaben aktualisieren
+
+Beim Aktualisieren:
+- bezahlt -> regulärer Grundbetrag der neuen Woche
+- offen -> bisheriger offener Betrag wird verdoppelt
+Historie bleibt erhalten.
+Berechtigung: Ausbilder bis Boss.
+Website: /personal/wochenabgaben

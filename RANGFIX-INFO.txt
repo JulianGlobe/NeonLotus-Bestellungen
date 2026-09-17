@@ -1,0 +1,16 @@
+SAKURA RANGFIX
+
+Behoben:
+- Bei /einstellung, /uprank und /downrank werden vor Vergabe des neuen Rangs
+  IMMER alle 12 konfigurierten Sakura-Rangrollen entfernt.
+- Zusätzlich werden alle drei Rang-/Bereichstrenner entfernt.
+- Danach werden nur Grundrollen + neuer Rang + passender Trenner vergeben.
+- Die Entfernung verlässt sich nicht mehr auf den möglicherweise veralteten Discord-Rollen-Cache.
+- Das Mitglied wird zwischen Entfernen und Neuvergabe frisch von Discord geladen.
+
+Grundrollen bleiben:
+- Sakura Mitarbeiter
+- Rang
+- Sakura Performance
+
+Dieser Fix baut auf dem zuletzt getesteten Multi-Discord-Paket auf.

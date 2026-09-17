@@ -1,0 +1,13 @@
+BERECHTIGUNG GEÄNDERT
+
+Der Befehl
+  /personalakte clear
+
+kann ausschließlich von Mitgliedern mit der Rolle
+  Sakura Leitung
+ausgeführt werden.
+
+Verwendete Rollen-ID kommt direkt aus config.json:
+  roles.sakura_leitung
+
+Administratoren ohne diese Rolle erhalten ebenfalls keine Berechtigung.

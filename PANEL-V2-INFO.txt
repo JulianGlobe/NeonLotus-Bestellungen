@@ -1,0 +1,14 @@
+PANELS V2
+Vier persistente Sakura-Verwaltungspanels.
+Komplexe Aktionen laufen über Discord User-/Role-Selects und Modals statt über Slash-Commands.
+Slash-Commands bleiben parallel erhalten.
+
+Finanzen zusätzlich:
+- /kasse einzahlung betrag grund
+- /kasse auszahlung betrag grund
+- Panelbuttons Einzahlung / Auszahlung
+- Fraktionsfarben kosten $50.000 und werden bei erfolgreicher Veröffentlichung automatisch zur Fraktionskasse addiert.
+- Bestehende automatische Einnahmen aus Sanktionen und Wochenabgaben bleiben bestehen.
+
+BOT_PUBLISHED=false: Panels werden nicht neu erstellt/synchronisiert.
+BOT_PUBLISHED=true: Panels werden beim Start erstellt/aktualisiert.

@@ -1,0 +1,38 @@
+NEON LOTUS – TESTIMPLEMENTIERUNG
+
+Implementiert:
+- Neue Neon-Lotus-Ränge:
+  1 Nachwuchs
+  2 Clubkraft
+  3 Profi
+  4 Manager
+  5 Leitung
+- Hauptdiscord-Spiegelrollen:
+  NL. Nachwuchs / NL. Clubkraft / NL. Profi / NL. Manager / NL. Leitung
+- Globale Neon-Lotus-Rolle auf dem Hauptdiscord.
+- Neon-Lotus-Leitungsrolle auf dem Hauptdiscord bei Rang Leitung.
+- Einstellung Neon Lotus setzt Hauptdiscord- und Subdiscord-Rang gemeinsam.
+- Beförderung/Degradierung Neon Lotus folgt ausschließlich:
+  Nachwuchs -> Clubkraft -> Profi -> Manager -> Leitung
+- Sakura-Rang bleibt bei Neon-Lotus-Rangänderungen unverändert.
+- Neon-Lotus-Einstellung nur möglich, wenn die Person aktiv bei Sakura eingestellt ist.
+- Beim Join auf Neon Lotus werden Sakura Personal + Sakura Aushilfe NUR vergeben,
+  wenn die Person aktiv bei Sakura eingestellt ist.
+- Wird eine Person erst nach dem Join bei Sakura eingestellt, werden diese beiden
+  Rollen ebenfalls synchronisiert.
+- Personalpanel fragt bei Einstellung/Beförderung/Degradierung nun Sakura oder Neon Lotus ab.
+- Website zeigt den Neon-Lotus-Rang weiterhin über employee_ranks an.
+
+TESTEMPFEHLUNG:
+1. Testperson muss auf Sakura und Neon Lotus sein.
+2. Testperson bei Sakura einstellen bzw. bestehende aktive Sakura-Person verwenden.
+3. Personalpanel -> Einstellung -> Person -> Neon Lotus -> Nachwuchs.
+4. Prüfen:
+   Hauptdiscord: NL. Nachwuchs + globale Neon-Lotus-Rolle.
+   Neon Lotus: Nachwuchs + Neon Lotus Personal.
+5. Personalpanel -> Beförderung -> Neon Lotus mehrfach testen.
+6. Prüfen, dass Sakura-Rang unverändert bleibt.
+7. Test mit einer NICHT bei Sakura eingestellten Person: Neon-Einstellung muss blockieren.
+
+HINWEIS:
+Blacklist ist in diesem Testpaket noch NICHT implementiert.

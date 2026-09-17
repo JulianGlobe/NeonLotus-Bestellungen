@@ -1,0 +1,16 @@
+DESIGN-UPDATE
+
+Discord:
+- Einstellung, Beförderung, Degradierung
+- Abmeldungen
+- Wochenabgaben
+- Sanktionen
+wurden optisch strukturierter aufgebaut (Emojis, Felder, Footer).
+
+Bestehende Funktionen und Berechtigungen bleiben erhalten.
+
+Website /personal/mitarbeiter:
+- übersichtlichere Kennzahlen
+- Sakura- und Neon-Lotus-Personal separat sichtbar
+- Mitarbeiterkarten zeigen beide Ränge deutlicher
+- Aktiv/Inaktiv-Status als Badge

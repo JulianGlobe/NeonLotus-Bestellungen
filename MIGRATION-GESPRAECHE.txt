@@ -1,0 +1,12 @@
+NEU: GESPRAECHSEINLADUNGEN
+
+- Neue SQLite-Tabelle: meeting_invitations
+- /termineinladung speichert neue Einladungen automatisch.
+- Personalübersicht zeigt die Anzahl der Einladungen.
+- Mitarbeiterakte zeigt die komplette Einladungshistorie.
+- Dashboard-Übersicht zeigt die neuesten Einladungen.
+- Bestehende Datenbank bleibt erhalten.
+- Frühere Einladungen vor diesem Update sind nicht automatisch vorhanden.
+
+Keine neuen Railway-Variablen erforderlich.
+Keine Rollen-IDs müssen erneut eingetragen werden.

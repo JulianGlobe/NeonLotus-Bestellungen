@@ -1,0 +1,15 @@
+Sakura – beide Zusatzrollen-Ebenen
+
+Praktikant bis Meister:
+- Mitarbeiter: 1549170725234016276
+
+Ausbilder bis Teamleiter:
+- Führungsebene: 1549170497663668255
+- weiterer Rang: 1097403678715031612
+
+Manager bis Boss:
+- Leitungsebene: 1549170141768450148
+- weiterer Rang: 1096402401382109245
+
+Beim Rangwechsel werden alte Rangrollen sowie BEIDE Zusatzrollen-Sets entfernt
+und anschließend nur die zum neuen Rang passenden Rollen vergeben.

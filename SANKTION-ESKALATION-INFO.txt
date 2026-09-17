@@ -1,0 +1,14 @@
+SANKTIONS-ESKALATION
+
+Logik:
+Tag 0: Grundbetrag, 5 Tage Zahlungsfrist
+nach 5 Tagen offen: Betrag x2
+nach 10 Tagen offen: Betrag erneut x2
+nach 15 Tagen weiterhin offen: keine weitere Erhöhung; "Kündigung ausstehend"
+
+Beispiele:
+50.000 -> 100.000 -> 200.000 -> Kündigung ausstehend
+200.000 -> 400.000 -> 800.000 -> Kündigung ausstehend
+
+Der Bot prüft beim Start, alle 15 Minuten und beim Verwenden von /sanktion.
+Beim Bezahlen wird der dann tatsächlich fällige Betrag automatisch zur Fraktionskasse addiert.

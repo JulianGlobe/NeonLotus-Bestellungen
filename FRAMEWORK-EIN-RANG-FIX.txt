@@ -1,0 +1,23 @@
+FIX – GEMEINSAME FRAMEWORK-RANGSTRUKTUR
+
+Korrektur:
+Auf dem Sakura-Hauptdiscord darf eine Person immer nur EINEN Rang aus der festen
+Framework-Rangstruktur gleichzeitig besitzen.
+
+Beispiel nach Neon-Lotus-Einstellung als Clubkraft:
+- Sakura
+- Neon Lotus
+- NL. Clubkraft
+- KEIN zusätzlicher Geselle/Tuner/anderer Sakura-Rang
+
+Neon-Lotus-Subdiscord:
+- Clubkraft
+
+Die Datenbank kann die getrennten Karrierepfade Sakura und Neon Lotus weiterhin
+separat speichern. Die sichtbare Hauptdiscord-Rangrolle ist jedoch exklusiv.
+
+Beim Setzen eines Neon-Lotus-Rangs werden vorher alle Sakura- und NL.-Framework-Rangrollen
+auf dem Hauptdiscord entfernt und anschließend genau der gewünschte NL.-Rang gesetzt.
+Beim Setzen eines Sakura-Rangs werden entsprechend vorhandene NL.-Framework-Ränge entfernt.
+
+Blacklist ist weiterhin noch nicht implementiert.

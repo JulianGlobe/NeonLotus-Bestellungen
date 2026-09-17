@@ -1,0 +1,16 @@
+SAKURA SANKTIONEN
+
+- Sanktionen auf dem Hauptdiscord nur im festgelegten Sanktions-Channel.
+- Berechtigt: Ausbilder bis Boss + Neon Lotus Leitung + Blacklist Leitung.
+- Zahlungsfrist: 5 Tage ab Erteilung.
+- /sanktion offen zeigt Frist und Überfällig-Status.
+- Website zeigt Zahlungsfrist und Überfällig-Kennzeichnung.
+
+Automatische Rollen auf dem Sakura-Hauptdiscord:
+0 offene Sanktionen = keine Sanktionsrolle
+1 offene Sanktion = 1. Sanktion
+2 oder mehr offene Sanktionen = 1. Sanktion + 2. Sanktion
+
+Bei /sanktion bezahlt und /sanktion revidiert werden die Rollen sofort neu synchronisiert.
+Neon-Lotus-Sanktionsverwaltung bleibt ansonsten unverändert und schreibt weiterhin
+in dieselbe zentrale Datenbank.
